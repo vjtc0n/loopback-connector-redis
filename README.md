@@ -1,45 +1,49 @@
-## loopback-connector-redis
+# EXPERIMENTAL
 
 ![StrongLoop Labs](http://docs.strongloop.com/download/thumbnails/5310165/StrongLoop%20Labs%20Logo%20Cropped.png "StrongLoop Labs")
 
-> StrongLoop Labs projects provide early access to advanced or experimental functionality.  In general, these projects may lack usability, completeness, documentation, and robustness, and may be outdated.
-However, StrongLoop supports these projects: Paying customers can open issues using the StrongLoop customer support system (Zendesk), and community users can report bugs on GitHub.
+StrongLoop Labs provides early access to pre-release or experimental projects.
+In general, these projects may lack functionality, usability, completeness,
+documentation, robustness and may be outdated. StrongLoop considers this project
+under active development and fully supports this project. Paying customers may
+open issues using the StrongLoop customer support system (Zendesk) while
+community users are encouraged to submit feature requests/bugs reports using
+GitHub issues.
 
-**NOTE: THIS MODULE IS PRE-RELEASE AND UNDER ACTIVE DEVELOPMENT**
+---
 
-Redis connector for LoopBack.
+# loopback-connector-redis
+
+The official Redis connector for the LoopBack framework.
 
 ## Usage
 
-To use it you need `loopback-datasource-juggler@1.0.x`.
 
-1. Setup dependencies in `package.json`:
+### 1. Install dependencies
 
-    ```json
-    {
-      ...
-      "dependencies": {
-        "loopback-datasource-juggler": "~1.0.0",
-        "loopback-connector-redis": "latest"
-      },
-      ...
-    }
-    ```
+Install the required dependencies via NPM:
 
-2. Use:
+```
+npm install --save loopback-connector-redis
+npm install --save loopback-datasource-juggler
+```
 
-    ```javascript
-        var DataSource = require('loopback-datasource-juggler').DataSource;
-        var ds = new DataSource('redis');
-    ```
+> This connector depends on [`loopback-datasource-juggler`](https://github.com/strongloop/loopback-datasource-juggler).
 
-## Running tests
+### 2. Configure a Redis datasource
 
-Make sure you have redis server running on default port, then run
+In your code, declare redis as a datasource:
 
-    npm test
+```
+var DataSource = require('loopback-datasource-juggler).DataSource;
 
-Be careful, it could delete your data in database number 0
+var ds = new DataSource('redis');
+...
+```
 
-## MIT License
+## Testing
 
+1. Start the Redis server (using the default port)
+2. Run `npm test`
+
+> WARNING: Your data in database 0 may be deleted.
