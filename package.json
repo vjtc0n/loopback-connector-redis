@@ -29,7 +29,7 @@
     "bluebird": "^2.9.0",
     "loopback-datasource-juggler": "^2.7.0",
     "mocha": "~1.13.0",
-    "should": "~1.2.2"
+    "should": "~8.0.2"
   },
   "dependencies": {
     "async": "^0.9.0",
