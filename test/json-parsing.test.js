@@ -2,7 +2,7 @@ var should = require('./init.js');
 
 var db, Model;
 
-describe('json-parsing', function() {
+describe.skip('json-parsing', function() {
 
     before(function() {
         db = getSchema();
