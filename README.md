@@ -1,4 +1,4 @@
-![StrongLoop Labs](http://docs.strongloop.com/download/thumbnails/5310165/StrongLoop%20Labs%20Logo%20Cropped.png "StrongLoop Labs")
+![StrongLoop Labs](http://loopback.io/images/9830552.png "StrongLoop Labs")
 
 This project provides early access to advanced or experimental functionality. 
 It may lack usability, completeness, documentation, and robustness, and may be outdated.
