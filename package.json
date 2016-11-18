@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "publishConfig": {
     "tag": "lts"
-  }, 
+  },
   "description": "The official Redis connector for the LoopBack Framework.",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "bluebird": "^2.9.0",
     "eslint": "^2.13.1",
     "eslint-config-loopback": "^4.0.0",
-    "loopback-datasource-juggler": "^3.0.0",
+    "loopback-datasource-juggler": "^2.53.0",
     "mocha": "^2.3.4",
     "should": "~8.0.2"
   },
