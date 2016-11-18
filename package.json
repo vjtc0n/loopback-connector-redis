@@ -1,6 +1,9 @@
 {
   "name": "loopback-connector-redis",
   "version": "0.1.0",
+  "publishConfig": {
+    "tag": "lts"
+  }, 
   "description": "The official Redis connector for the LoopBack Framework.",
   "main": "index.js",
   "scripts": {
