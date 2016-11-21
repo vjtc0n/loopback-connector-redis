@@ -2,6 +2,9 @@
   "name": "loopback-connector-redis",
   "version": "3.0.0-alpha.1",
   "description": "The official Redis connector for the LoopBack Framework.",
+  "engines": {
+    "node": ">=4"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
